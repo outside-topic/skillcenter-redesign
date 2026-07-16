@@ -793,7 +793,7 @@ img {
     border-radius: var(--radius-lg);
     padding: 36px 28px;
     text-align: center;
-    transition: var(--transition-slow);
+    transition: var(--transition);
     height: 100%;
     position: relative;
     overflow: hidden;

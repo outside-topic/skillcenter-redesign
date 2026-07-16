@@ -311,18 +311,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-gsap.to(".card_wrapper", {
-    transform: "translateX(-120%)",
-    scrollTrigger: {
-        trigger: ".card_wrapper",
-        scroller: "body",
-        start: "top 50%",
-        end: "top -100%",
-        scrub: 3,
-        pin: true
-    }
+// gsap.to(".card_wrapper", {
+//     transform: "translateX(-120%)",
+//     scrollTrigger: {
+//         trigger: ".card_wrapper",
+//         scroller: "body",
+//         start: "top 50%",
+//         end: "top -100%",
+//         scrub: 3,
+//         pin: true
+//     }
 
-})
+// })
 
 
 const swiper = new Swiper('.swiper', {
