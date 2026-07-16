@@ -332,14 +332,6 @@ img {
     box-shadow: none;
 }
 
-.toggler-line {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background-color: var(--white);
-    border-radius: 2px;
-    transition: var(--transition);
-}
 
 
 
@@ -690,7 +682,6 @@ img {
     line-height: 1.4;
     color: var(--primary);
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -1110,7 +1101,6 @@ img {
     margin-bottom: 12px;
     color: var(--primary);
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     transition: var(--transition);
@@ -1126,7 +1116,6 @@ img {
     line-height: 1.7;
     margin-bottom: 18px;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     flex: 1;
@@ -1511,8 +1500,8 @@ img {
     }
 }
 
-.card_wrapper {
+/* .card_wrapper {
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
-}
+} */
