@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Centre - Professional Skill Development Short Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg site-header" id="siteHeader">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid"
+                    style="height: 80px; width: 100px;" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                    <a href="#" class="btn btn-accent">Sign In</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ===================== HERO SECTION ===================== -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-shapes">
+                <div class="hero-shape hero-shape-1"></div>
+                <div class="hero-shape hero-shape-2"></div>
+                <div class="hero-shape hero-shape-3"></div>
+                <div class="hero-shape hero-shape-4"></div>
+                <div class="hero-shape hero-shape-5"></div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="hero-content">
+                            <h1 class="hero-title">
+                                ELEVATE YOUR CAREER WITH OUR PROFESSIONAL SKILL DEVELOPMENT SHORT COURSES
+                            </h1>
+                            <p class="hero-desc">
+                                Designed to empower professionals like you to unlock your full potential and take your
+                                career to new heights.
+                            </p>
+                            <div class="hero-btns">
+                                <a href="#courses" class="btn btn-accent btn-lg">Explore Courses</a>
+                                <a href="#" class="btn btn-outline-white btn-lg">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <div class="hero-visual">
+                            <div class="hero-card hero-card-1">
+                                <i class="bi bi-mortarboard-fill"></i>
+                                <div>
+                                    <strong>200+</strong>
+                                    <span>Courses</span>
+                                </div>
+                            </div>
+                            <div class="hero-card hero-card-2">
+                                <i class="bi bi-people-fill"></i>
+                                <div>
+                                    <strong>5,000+</strong>
+                                    <span>Students</span>
+                                </div>
+                            </div>
+                            <div class="hero-card hero-card-3">
+                                <i class="bi bi-trophy-fill"></i>
+                                <div>
+                                    <strong>98%</strong>
+                                    <span>Satisfaction</span>
+                                </div>
+                            </div>
+                            <div class="hero-image-wrapper">
+                                <img src="images/hero_img" alt="Professional Learning" class="hero-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="5000">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Active Students</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="200">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Online Courses</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Expert Instructors</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="98">0</span><span class="stat-plus">%</span>
+                                <span class="stat-label">Satisfaction Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TOP ONLINE COURSES ===================== -->
+        <section class="courses-section" id="courses">
+            <div class="container">
+                <div class="section-header">
+                    <div class="row align-items-end">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2 class="section-title">Top Online Courses</h2>
+                            <p class="section-subtitle">Discover our most popular courses chosen by thousands of
+                                professionals worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <!-- Course 1 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="course-card reveal-up">
+                            <div class="course-image">
+                                <img src="https://picsum.photos/seed/hr-biz-partner/400/250"
+                                    alt="Certified HR Business Partner 2.0">
+                                <span class="course-badge">HR Management</span>
+                            </div>
+                            <div class="course-body">
+                                <div class="course-meta">
+                                    <span><i class="bi bi-person"></i> Sarah Johnson</span>
+                                    <span><i class="bi bi-play-circle"></i> 24 Lessons</span>
+                                </div>
+                                <h3 class="course-title">Certified HR Business Partner 2.0</h3>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <span class="rating-text">5.0 (128)</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="course-price">&pound;49.99</span>
+                                    <button class="btn btn-add-cart"><i class="bi bi-cart-plus"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 2 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="course-card reveal-up">
+                            <div class="course-image">
+                                <img src="https://picsum.photos/seed/proj-mgmt-pro/400/250"
+                                    alt="Project Management Professional">
+                                <span class="course-badge">Project Management</span>
+                            </div>
+                            <div class="course-body">
+                                <div class="course-meta">
+                                    <span><i class="bi bi-person"></i> Michael Chen</span>
+                                    <span><i class="bi bi-play-circle"></i> 32 Lessons</span>
+                                </div>
+                                <h3 class="course-title">Project Management Professional</h3>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <span class="rating-text">4.5 (96)</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="course-price">&pound;59.99</span>
+                                    <button class="btn btn-add-cart"><i class="bi bi-cart-plus"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 3 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="course-card reveal-up">
+                            <div class="course-image">
+                                <img src="https://picsum.photos/seed/data-analytics-biz/400/250"
+                                    alt="Data Analytics for Business">
+                                <span class="course-badge">Data Science</span>
+                            </div>
+                            <div class="course-body">
+                                <div class="course-meta">
+                                    <span><i class="bi bi-person"></i> Emily Roberts</span>
+                                    <span><i class="bi bi-play-circle"></i> 28 Lessons</span>
+                                </div>
+                                <h3 class="course-title">Data Analytics for Business</h3>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <span class="rating-text">5.0 (74)</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="course-price">&pound;39.99</span>
+                                    <button class="btn btn-add-cart"><i class="bi bi-cart-plus"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 4 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="course-card reveal-up">
+                            <div class="course-image">
+                                <img src="https://picsum.photos/seed/digi-market-strat/400/250"
+                                    alt="Digital Marketing Strategy">
+                                <span class="course-badge">Marketing</span>
+                            </div>
+                            <div class="course-body">
+                                <div class="course-meta">
+                                    <span><i class="bi bi-person"></i> James Wilson</span>
+                                    <span><i class="bi bi-play-circle"></i> 20 Lessons</span>
+                                </div>
+                                <h3 class="course-title">Digital Marketing Strategy</h3>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <span class="rating-text">4.0 (112)</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="course-price">&pound;44.99</span>
+                                    <button class="btn btn-add-cart"><i class="bi bi-cart-plus"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 5 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="course-card reveal-up">
+                            <div class="course-image">
+                                <img src="https://picsum.photos/seed/leadership-exc/400/250"
+                                    alt="Leadership Excellence Program">
+                                <span class="course-badge">Leadership</span>
+                            </div>
+                            <div class="course-body">
+                                <div class="course-meta">
+                                    <span><i class="bi bi-person"></i> David Thompson</span>
+                                    <span><i class="bi bi-play-circle"></i> 18 Lessons</span>
+                                </div>
+                                <h3 class="course-title">Leadership Excellence Program</h3>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <span class="rating-text">5.0 (89)</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="course-price">&pound;54.99</span>
+                                    <button class="btn btn-add-cart"><i class="bi bi-cart-plus"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 6 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="course-card reveal-up">
+                            <div class="course-image">
+                                <img src="https://picsum.photos/seed/fin-acc-master/400/250"
+                                    alt="Financial Accounting Mastery">
+                                <span class="course-badge">Accounting</span>
+                            </div>
+                            <div class="course-body">
+                                <div class="course-meta">
+                                    <span><i class="bi bi-person"></i> Laura Adams</span>
+                                    <span><i class="bi bi-play-circle"></i> 30 Lessons</span>
+                                </div>
+                                <h3 class="course-title">Financial Accounting Mastery</h3>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <span class="rating-text">4.5 (67)</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="course-price">&pound;49.99</span>
+                                    <button class="btn btn-add-cart"><i class="bi bi-cart-plus"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" col-12 col-sm-12 col-md-12 text-center mt-5 pt-5 ">
+                            <a href="#" class="view-all-link">View All Cources <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CATEGORY SECTION ===================== -->
+        <section class="category-section" id="categories">
+            <div class="container">
+                <div class="section-header text-start">
+                    <h2 class="section-title text-white">Online Learning from the World's top categories</h2>
+                    <p class="section-subtitle text-white-60">Explore a wide range of professional categories designed
+                        to accelerate your career growth.</p>
+                </div>
+                <div class="card_wrapper g-4" id="gscroll">
+                    <div class="col-12 colsm-12 col-md-3 col-lg-3" id="gscrollt">
+                        <div class="category-card reveal-up">
+                            <div class="category-icon">
+                                <i class="bi bi-calculator"></i>
+                            </div>
+                            <h3 class="category-name">Accounting &amp; Finance</h3>
+                            <span class="category-count">0 Courses</span>
+                            <a href="#" class="category-link">View Courses <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 colsm-12 col-md-3 col-lg-3" id="gscrollt">
+                        <div class="category-card reveal-up">
+                            <div class="category-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="category-name">Leadership</h3>
+                            <span class="category-count">0 Courses</span>
+                            <a href="#" class="category-link">View Courses <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 colsm-12 col-md-3 col-lg-3" id="gscrollt">
+                        <div class="category-card reveal-up">
+                            <div class="category-icon">
+                                <i class="bi bi-diagram-3"></i>
+                            </div>
+                            <h3 class="category-name">Organization Development</h3>
+                            <span class="category-count">0 Courses</span>
+                            <a href="#" class="category-link">View Courses <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 colsm-12 col-md-3 col-lg-3" id="gscrollt">
+                        <div class="category-card reveal-up">
+                            <div class="category-icon">
+                                <i class="bi bi-book"></i>
+                            </div>
+                            <h3 class="category-name">Learning &amp; Development</h3>
+                            <span class="category-count">0 Courses</span>
+                            <a href="#" class="category-link">View Courses <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 colsm-12 col-md-3 col-lg-3" id="gscrollt">
+                        <div class="category-card reveal-up">
+                            <div class="category-icon">
+                                <i class="bi bi-kanban"></i>
+                            </div>
+                            <h3 class="category-name">Project Management</h3>
+                            <span class="category-count">0 Courses</span>
+                            <a href="#" class="category-link">View Courses <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 colsm-12 col-md-3 col-lg-3" id="gscrollt">
+                        <div class="category-card reveal-up">
+                            <div class="category-icon">
+                                <i class="bi bi-box-seam"></i>
+                            </div>
+                            <h3 class="category-name">Supply Chain Management</h3>
+                            <span class="category-count">0 Courses</span>
+                            <a href="#" class="category-link">View Courses <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 colsm-12 col-md-3 col-lg-3" id="gscrollt">
+                        <div class="category-card reveal-up">
+                            <div class="category-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="category-name">Human Resource</h3>
+                            <span class="category-count">1 Courses</span>
+                            <a href="#" class="category-link">View Courses <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 colsm-12 col-md-3 col-lg-3" id="gscrollt">
+                        <div class="category-card reveal-up">
+                            <div class="category-icon">
+                                <i class="bi bi-translate"></i>
+                            </div>
+                            <h3 class="category-name">English</h3>
+                            <span class="category-count">0 Courses</span>
+                            <a href="#" class="category-link">View Courses <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TESTIMONIAL SECTION ===================== -->
+        <section class="testimonial-section" id="testimonials">
+            <div class="container">
+                <div class="section-header text-start">
+                    <h2 class="section-title">What Our Participants Say</h2>
+                    <p class="section-subtitle">Hear from professionals who have transformed their careers through our
+                        courses.</p>
+                </div>
+                <div class="testimonial-slider-wrap">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+                                    <p class="testimonial-text">The Certified HR Business Partner course completely
+                                        transformed
+                                        my approach to HR strategy. The content was practical, up-to-date, and
+                                        immediately
+                                        applicable to my role. I would highly recommend Skill Centre to any professional
+                                        looking
+                                        to advance their career.</p>
+                                    <div class="testimonial-rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <img src="https://picsum.photos/seed/person-emma/80/80" alt="Emma Richardson"
+                                            class="testimonial-avatar">
+                                        <div>
+                                            <strong class="author-name">Emma Richardson</strong>
+                                            <span class="author-role">HR Director, TechCorp Ltd</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+                                    <p class="testimonial-text">I enrolled in the Leadership Excellence Program and it
+                                        was
+                                        the
+                                        best investment I have made in my professional development. The instructors were
+                                        world-class and the peer networking opportunities were invaluable. Skill Centre
+                                        delivers
+                                        on its promises.</p>
+                                    <div class="testimonial-rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <img src="https://picsum.photos/seed/person-mark/80/80" alt="Mark Davies"
+                                            class="testimonial-avatar">
+                                        <div>
+                                            <strong class="author-name">Mark Davies</strong>
+                                            <span class="author-role">VP of Operations, GlobalEdge</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+                                    <p class="testimonial-text">The Data Analytics for Business course gave me the
+                                        skills I
+                                        needed to transition into a data-driven role. The flexible online format meant I
+                                        could
+                                        learn at my own pace without compromising my work commitments. Exceptional
+                                        quality
+                                        throughout.</p>
+                                    <div class="testimonial-rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <img src="https://picsum.photos/seed/person-priya/80/80" alt="Priya Sharma"
+                                            class="testimonial-avatar">
+                                        <div>
+                                            <strong class="author-name">Priya Sharma</strong>
+                                            <span class="author-role">Business Analyst, FinServe Group</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== BLOG SECTION ===================== -->
+        <section class="blog-section" id="blog">
+            <div class="container">
+                <div class="section-header">
+                    <div class="row align-items-end">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2 class="section-title">Skill Centre - Blog</h2>
+                            <p class="section-subtitle">Stay updated with the latest insights, tips, and trends in
+                                professional development.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <!-- Blog 1 -->
+                    <div class="col-md-4">
+                        <article class="blog-card reveal-up">
+                            <div class="blog-image">
+                                <img src="images/blog_img1.png" class="img-fluid" alt="The Future of Work">
+                                <div class="blog-overlay">
+                                    <a href="#" class="blog-read-btn">Read More</a>
+                                </div>
+                            </div>
+                            <div class="blog-body">
+                                <div class="blog-meta">
+                                    <span class="blog-date"><i class="bi bi-calendar3"></i> Jan 15, 2025</span>
+                                    <span class="blog-category">Leadership</span>
+                                </div>
+                                <h3 class="blog-title">The Impact of Learning and Development on Organizations</h3>
+                                <p class="blog-excerpt">Discover how micro-learning and short courses are becoming the
+                                    preferred method for upskilling in the modern workplace.</p>
+                                <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Blog 2 -->
+                    <div class="col-md-4">
+                        <article class="blog-card reveal-up">
+                            <div class="blog-image">
+                                <img src="images/blog_img2.png" class="img-fluid" alt="Top HR Trends">
+                                <div class="blog-overlay">
+                                    <a href="#" class="blog-read-btn">Read More</a>
+                                </div>
+                            </div>
+                            <div class="blog-body">
+                                <div class="blog-meta">
+                                    <span class="blog-date"><i class="bi bi-calendar3"></i> Jan 08, 2025</span>
+                                    <span class="blog-category">HR Management</span>
+                                </div>
+                                <h3 class="blog-title">Mastering Behavioral Interviews: Your Guide to Success</h3>
+                                <p class="blog-excerpt">Stay ahead of the curve with these essential HR trends that are
+                                    shaping the future of people management.</p>
+                                <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Blog 3 -->
+                    <div class="col-md-4">
+                        <article class="blog-card reveal-up">
+                            <div class="blog-image">
+                                <img src="images/blog_img3.png" class="img-fluid"
+                                    alt="Data Skills Advantage">
+                                <div class="blog-overlay">
+                                    <a href="#" class="blog-read-btn">Read More</a>
+                                </div>
+                            </div>
+                            <div class="blog-body">
+                                <div class="blog-meta">
+                                    <span class="blog-date"><i class="bi bi-calendar3"></i> Dec 28, 2024</span>
+                                    <span class="blog-category">Data Science</span>
+                                </div>
+                                <h3 class="blog-title">Effective HR Planning: The Key to Organizational Success
+                                </h3>
+                                <p class="blog-excerpt">Learn why data literacy is no longer optional and how it can
+                                    accelerate your career regardless of your field.</p>
+                                <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" col-12 col-sm-12 col-md-12 text-center mt-5 pt-5 ">
+                            <a href="#" class="view-all-link">View All Posts <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CTA SECTION ===================== -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card reveal-up">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <h2 class="cta-title">Ready to Take the Next Step in Your Career?</h2>
+                            <p class="cta-desc">Join thousands of professionals who have already transformed their
+                                skills with our expert-led short courses. Start learning today.</p>
+                        </div>
+                        <div class="col-lg-5 text-lg-end mt-4 mt-lg-0">
+                            <a href="#courses" class="btn btn-accent btn-lg">Browse All Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== NEWSLETTER SECTION ===================== -->
+        <section class="newsletter-section" id="newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="newsletter-content text-center reveal-up">
+                            <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+                            <p class="newsletter-desc">Get the latest course updates, professional tips, and exclusive
+                                offers delivered straight to your inbox.</p>
+                            <form class="newsletter-form" id="newsletterForm">
+                                <div class="newsletter-input-wrap">
+                                    <input type="email" class="newsletter-input" id="newsletterEmail"
+                                        placeholder="Enter your email address" required>
+                                    <button type="submit" class="btn btn-accent">Subscribe</button>
+                                </div>
+                                <div class="newsletter-feedback" id="newsletterFeedback"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-about">
+                            <span class="brand-text footer-brand">SKILL CENTRE</span>
+                            <p class="footer-desc">Empowering professionals worldwide with industry-leading short
+                                courses designed for real-world career advancement and skill development.</p>
+                            <div class="footer-social">
+                                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <div class="footer-links">
+                            <h4 class="footer-heading">Quick Links</h4>
+                            <ul class="footer-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Categories</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="footer-links">
+                            <h4 class="footer-heading">Categories</h4>
+                            <ul class="footer-nav">
+                                <li><a href="#">Accounting &amp; Finance</a></li>
+                                <li><a href="#">Leadership</a></li>
+                                <li><a href="#">HR Management</a></li>
+                                <li><a href="#">Digital Marketing</a></li>
+                                <li><a href="#">Project Management</a></li>
+                                <li><a href="#">Data Science</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact">
+                            <h4 class="footer-heading">Contact Info</h4>
+                            <ul class="footer-contact-list">
+                                <li>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>London, United Kingdom</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-envelope"></i>
+                                    <a href="mailto:info@skillcentre.uk">info@skillcentre.uk</a>
+                                </li>
+                                <li>
+                                    <i class="bi bi-telephone"></i>
+                                    <a href="tel:+442012345678">+44 20 1234 5678</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="footer-copyright">&copy; 2025 Skill Centre. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-legal">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"
+        integrity="sha512-Qrpii3NEFZ02RN6ZqpTu6pS/5PEq7EzBYJLki3AKBd8IncrlAwQdZHzExYwS0+b1NM0/qfxI1GOhqWLVosocDA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"
+        integrity="sha512-HemPoJ+m4KR4XM3VY+N58XFYN7qdXuR0elHeVYGJBJ6LYC+xoeHodEpwiN5JxXLyvA+sRd7/FJ6w6lz5IkANNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
