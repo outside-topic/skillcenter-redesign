@@ -60,26 +60,41 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section[id]');
     const navItems = document.querySelectorAll('.navbar-nav .nav-link');
 
-    function updateActiveNav() {
-        const scrollPos = window.scrollY + 120;
+    if (sections.length > 0) {
 
-        sections.forEach(function (section) {
-            const top = section.offsetTop;
-            const height = section.offsetHeight;
-            const id = section.getAttribute('id');
+        function updateActiveNav() {
 
-            if (scrollPos >= top && scrollPos < top + height) {
-                navItems.forEach(function (item) {
-                    item.classList.remove('active');
-                    if (item.getAttribute('href') === '#' + id) {
-                        item.classList.add('active');
-                    }
-                });
-            }
+            const scrollPos = window.scrollY + 120;
+
+            sections.forEach(function (section) {
+
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+                const id = section.getAttribute('id');
+
+                if (scrollPos >= top && scrollPos < top + height) {
+
+                    navItems.forEach(function (item) {
+
+                        item.classList.remove('active');
+
+                        if (item.getAttribute('href') === '#' + id) {
+                            item.classList.add('active');
+                        }
+
+                    });
+
+                }
+
+            });
+
+        }
+
+        window.addEventListener('scroll', updateActiveNav, {
+            passive: true
         });
-    }
 
-    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    }
 
     /* ===========================
        SCROLL REVEAL ANIMATION
@@ -326,13 +341,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
-  spaceBetween: 30,
-  speed: 2000,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  }
+    // Optional parameters
+    loop: true,
+    spaceBetween: 30,
+    speed: 2000,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    }
 
 });
+
+
+
+
+// ============= Contact start ==========
+
+// ============= Contact end ==========

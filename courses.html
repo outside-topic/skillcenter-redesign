@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses - Skill Centre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg site-header" id="siteHeader">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid"
+                    style="height: 80px; width: 100px;" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page"
+                            href="https://worldacademy.uk/list-of-courses">Certified Centers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                    <a href="#" class="btn btn-accent">Sign In</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ===================== HERO SECTION ===================== -->
+        <section class="hero-courses">
+            <div class="hero-bg-shapes">
+                <div class="hero-shape hero-shape-1"></div>
+                <div class="hero-shape hero-shape-2"></div>
+                <div class="hero-shape hero-shape-3"></div>
+                <div class="hero-shape hero-shape-4"></div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Our Courses</li>
+                            </ol>
+                        </nav>
+                        <h1 class="hero-title">Our Courses</h1>
+                        <p class="hero-desc">Explore our comprehensive range of professional short courses designed to
+                            help you develop the skills employers value most.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bottom-edge"></div>
+        </section>
+
+        <!-- ===================== COURSE CONTENT AREA ===================== -->
+        <section class="courses-content-section">
+            <div class="container">
+                <div class="row">
+
+                    <!-- ===================== FILTER SIDEBAR ===================== -->
+                    <div class="col-lg-3">
+                        <aside class="filter-sidebar" id="filterSidebar">
+                            <div class="filter-sidebar-inner">
+                                <div class="filter-header">
+                                    <h3 class="filter-title">Filters</h3>
+                                    <button class="filter-clear" id="filterClear">Clear All</button>
+                                </div>
+
+                                <!-- Category Filter -->
+                                <div class="filter-group">
+                                    <button class="filter-group-toggle" data-bs-toggle="collapse"
+                                        data-bs-target="#filterCategory" aria-expanded="true">
+                                        <span>Category</span>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </button>
+                                    <div class="collapse show" id="filterCategory">
+                                        <div class="filter-group-body">
+                                            <label class="filter-check">
+                                                <input type="checkbox" name="category" value="all" checked>
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">All Categories</span>
+                                                <span class="check-count">9</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="checkbox" name="category" value="accounting">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">Accounting &amp; Finance</span>
+                                                <span class="check-count">2</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="checkbox" name="category" value="leadership">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">Leadership</span>
+                                                <span class="check-count">2</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="checkbox" name="category" value="hr">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">HR Management</span>
+                                                <span class="check-count">1</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="checkbox" name="category" value="marketing">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">Digital Marketing</span>
+                                                <span class="check-count">2</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="checkbox" name="category" value="project">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">Project Management</span>
+                                                <span class="check-count">1</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="checkbox" name="category" value="data">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">Data Science</span>
+                                                <span class="check-count">1</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Price Filter -->
+                                <div class="filter-group">
+                                    <button class="filter-group-toggle" data-bs-toggle="collapse"
+                                        data-bs-target="#filterPrice" aria-expanded="true">
+                                        <span>Price Range</span>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </button>
+                                    <div class="collapse show" id="filterPrice">
+                                        <div class="filter-group-body">
+                                            <label class="filter-check">
+                                                <input type="radio" name="price" value="all" checked>
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">All Prices</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="radio" name="price" value="under40">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">Under &pound;40</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="radio" name="price" value="40to50">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">&pound;40 - &pound;50</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="radio" name="price" value="over50">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">Over &pound;50</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Level Filter -->
+                                <div class="filter-group">
+                                    <button class="filter-group-toggle" data-bs-toggle="collapse"
+                                        data-bs-target="#filterLevel" aria-expanded="true">
+                                        <span>Level</span>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </button>
+                                    <div class="collapse show" id="filterLevel">
+                                        <div class="filter-group-body">
+                                            <label class="filter-check">
+                                                <input type="radio" name="level" value="all" checked>
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">All Levels</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="radio" name="level" value="beginner">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">Beginner</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="radio" name="level" value="intermediate">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">Intermediate</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="radio" name="level" value="advanced">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">Advanced</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Rating Filter -->
+                                <div class="filter-group">
+                                    <button class="filter-group-toggle" data-bs-toggle="collapse"
+                                        data-bs-target="#filterRating" aria-expanded="false">
+                                        <span>Rating</span>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </button>
+                                    <div class="collapse" id="filterRating">
+                                        <div class="filter-group-body">
+                                            <label class="filter-check">
+                                                <input type="radio" name="rating" value="all" checked>
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">All Ratings</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="radio" name="rating" value="4.5">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">4.5 &amp; Above</span>
+                                            </label>
+                                            <label class="filter-check">
+                                                <input type="radio" name="rating" value="4.0">
+                                                <span class="check-mark"></span>
+                                                <span class="check-label">4.0 &amp; Above</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+
+                    <!-- ===================== COURSE GRID AREA ===================== -->
+                    <div class="col-lg-9">
+                        <!-- Toolbar -->
+                        <div class="course-toolbar">
+                            <div class="toolbar-left">
+                                <button class="filter-toggle-btn" id="filterToggleBtn" data-bs-toggle="offcanvas"
+                                    data-bs-target="#filterOffcanvas">
+                                    <i class="bi bi-funnel"></i> Filters
+                                </button>
+                                <span class="course-count">Showing <strong>9</strong> courses</span>
+                            </div>
+                            <div class="toolbar-right">
+                                <div class="sort-dropdown">
+                                    <label class="sort-label" for="sortSelect">Sort by:</label>
+                                    <select class="sort-select" id="sortSelect">
+                                        <option value="popular">Most Popular</option>
+                                        <option value="newest">Newest</option>
+                                        <option value="price-low">Price: Low to High</option>
+                                        <option value="price-high">Price: High to Low</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course Grid -->
+                        <div class="course-grid" id="courseGrid">
+                            <!-- Course 1 -->
+                            <div class="course-card-col reveal-up">
+                                <div class="course-card">
+                                    <div class="course-card-image">
+                                        <img src="https://picsum.photos/seed/hr-biz-partner/400/250"
+                                            alt="Certified HR Business Partner 2.0">
+                                        <span class="course-card-badge">HR Management</span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-meta">
+                                            <span><i class="bi bi-person"></i> Sarah Johnson</span>
+                                            <span><i class="bi bi-play-circle"></i> 24 Lessons</span>
+                                        </div>
+                                        <h3 class="course-card-title">Certified HR Business Partner 2.0</h3>
+                                        <div class="course-card-rating">
+                                            <div class="stars"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                            <span class="rating-text">5.0 (128)</span>
+                                        </div>
+                                        <div class="course-card-footer">
+                                            <span class="course-card-price">&pound;49.99</span>
+                                            <button class="btn btn-card-action"><i class="bi bi-cart-plus"></i> Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 2 -->
+                            <div class="course-card-col reveal-up">
+                                <div class="course-card">
+                                    <div class="course-card-image">
+                                        <img src="https://picsum.photos/seed/proj-mgmt-pro/400/250"
+                                            alt="Project Management Professional">
+                                        <span class="course-card-badge">Project Management</span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-meta">
+                                            <span><i class="bi bi-person"></i> Michael Chen</span>
+                                            <span><i class="bi bi-play-circle"></i> 32 Lessons</span>
+                                        </div>
+                                        <h3 class="course-card-title">Project Management Professional</h3>
+                                        <div class="course-card-rating">
+                                            <div class="stars"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+                                            <span class="rating-text">4.5 (96)</span>
+                                        </div>
+                                        <div class="course-card-footer">
+                                            <span class="course-card-price">&pound;59.99</span>
+                                            <button class="btn btn-card-action"><i class="bi bi-cart-plus"></i> Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 3 -->
+                            <div class="course-card-col reveal-up">
+                                <div class="course-card">
+                                    <div class="course-card-image">
+                                        <img src="https://picsum.photos/seed/data-analytics-biz/400/250"
+                                            alt="Data Analytics for Business">
+                                        <span class="course-card-badge">Data Science</span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-meta">
+                                            <span><i class="bi bi-person"></i> Emily Roberts</span>
+                                            <span><i class="bi bi-play-circle"></i> 28 Lessons</span>
+                                        </div>
+                                        <h3 class="course-card-title">Data Analytics for Business</h3>
+                                        <div class="course-card-rating">
+                                            <div class="stars"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                            <span class="rating-text">5.0 (74)</span>
+                                        </div>
+                                        <div class="course-card-footer">
+                                            <span class="course-card-price">&pound;39.99</span>
+                                            <button class="btn btn-card-action"><i class="bi bi-cart-plus"></i> Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 4 -->
+                            <div class="course-card-col reveal-up">
+                                <div class="course-card">
+                                    <div class="course-card-image">
+                                        <img src="https://picsum.photos/seed/digi-market-strat/400/250"
+                                            alt="Digital Marketing Strategy">
+                                        <span class="course-card-badge">Marketing</span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-meta">
+                                            <span><i class="bi bi-person"></i> James Wilson</span>
+                                            <span><i class="bi bi-play-circle"></i> 20 Lessons</span>
+                                        </div>
+                                        <h3 class="course-card-title">Digital Marketing Strategy</h3>
+                                        <div class="course-card-rating">
+                                            <div class="stars"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star"></i></div>
+                                            <span class="rating-text">4.0 (112)</span>
+                                        </div>
+                                        <div class="course-card-footer">
+                                            <span class="course-card-price">&pound;44.99</span>
+                                            <button class="btn btn-card-action"><i class="bi bi-cart-plus"></i> Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 5 -->
+                            <div class="course-card-col reveal-up">
+                                <div class="course-card">
+                                    <div class="course-card-image">
+                                        <img src="https://picsum.photos/seed/leadership-exc/400/250"
+                                            alt="Leadership Excellence Program">
+                                        <span class="course-card-badge">Leadership</span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-meta">
+                                            <span><i class="bi bi-person"></i> David Thompson</span>
+                                            <span><i class="bi bi-play-circle"></i> 18 Lessons</span>
+                                        </div>
+                                        <h3 class="course-card-title">Leadership Excellence Program</h3>
+                                        <div class="course-card-rating">
+                                            <div class="stars"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                            <span class="rating-text">5.0 (89)</span>
+                                        </div>
+                                        <div class="course-card-footer">
+                                            <span class="course-card-price">&pound;54.99</span>
+                                            <button class="btn btn-card-action"><i class="bi bi-cart-plus"></i> Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 6 -->
+                            <div class="course-card-col reveal-up">
+                                <div class="course-card">
+                                    <div class="course-card-image">
+                                        <img src="https://picsum.photos/seed/fin-acc-master/400/250"
+                                            alt="Financial Accounting Mastery">
+                                        <span class="course-card-badge">Accounting</span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-meta">
+                                            <span><i class="bi bi-person"></i> Laura Adams</span>
+                                            <span><i class="bi bi-play-circle"></i> 30 Lessons</span>
+                                        </div>
+                                        <h3 class="course-card-title">Financial Accounting Mastery</h3>
+                                        <div class="course-card-rating">
+                                            <div class="stars"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+                                            <span class="rating-text">4.5 (67)</span>
+                                        </div>
+                                        <div class="course-card-footer">
+                                            <span class="course-card-price">&pound;49.99</span>
+                                            <button class="btn btn-card-action"><i class="bi bi-cart-plus"></i> Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 7 -->
+                            <div class="course-card-col reveal-up">
+                                <div class="course-card">
+                                    <div class="course-card-image">
+                                        <img src="https://picsum.photos/seed/strat-biz-mgmt/400/250"
+                                            alt="Strategic Business Management">
+                                        <span class="course-card-badge">Leadership</span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-meta">
+                                            <span><i class="bi bi-person"></i> Richard Blake</span>
+                                            <span><i class="bi bi-play-circle"></i> 22 Lessons</span>
+                                        </div>
+                                        <h3 class="course-card-title">Strategic Business Management</h3>
+                                        <div class="course-card-rating">
+                                            <div class="stars"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                            <span class="rating-text">5.0 (53)</span>
+                                        </div>
+                                        <div class="course-card-footer">
+                                            <span class="course-card-price">&pound;54.99</span>
+                                            <button class="btn btn-card-action"><i class="bi bi-cart-plus"></i> Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 8 -->
+                            <div class="course-card-col reveal-up">
+                                <div class="course-card">
+                                    <div class="course-card-image">
+                                        <img src="https://picsum.photos/seed/adv-excel-pro/400/250"
+                                            alt="Advanced Excel for Professionals">
+                                        <span class="course-card-badge">Accounting</span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-meta">
+                                            <span><i class="bi bi-person"></i> Karen Wright</span>
+                                            <span><i class="bi bi-play-circle"></i> 26 Lessons</span>
+                                        </div>
+                                        <h3 class="course-card-title">Advanced Excel for Professionals</h3>
+                                        <div class="course-card-rating">
+                                            <div class="stars"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+                                            <span class="rating-text">4.5 (91)</span>
+                                        </div>
+                                        <div class="course-card-footer">
+                                            <span class="course-card-price">&pound;34.99</span>
+                                            <button class="btn btn-card-action"><i class="bi bi-cart-plus"></i> Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 9 -->
+                            <div class="course-card-col reveal-up">
+                                <div class="course-card">
+                                    <div class="course-card-image">
+                                        <img src="https://picsum.photos/seed/soc-media-mkt/400/250"
+                                            alt="Social Media Marketing Mastery">
+                                        <span class="course-card-badge">Marketing</span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-meta">
+                                            <span><i class="bi bi-person"></i> Sophie Taylor</span>
+                                            <span><i class="bi bi-play-circle"></i> 16 Lessons</span>
+                                        </div>
+                                        <h3 class="course-card-title">Social Media Marketing Mastery</h3>
+                                        <div class="course-card-rating">
+                                            <div class="stars"><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                            <span class="rating-text">5.0 (78)</span>
+                                        </div>
+                                        <div class="course-card-footer">
+                                            <span class="course-card-price">&pound;39.99</span>
+                                            <button class="btn btn-card-action"><i class="bi bi-cart-plus"></i> Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <nav class="course-pagination" aria-label="Course pagination">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous"><i
+                                            class="bi bi-chevron-left"></i></a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next"><i
+                                            class="bi bi-chevron-right"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== MOBILE FILTER OFFCANVAS ===================== -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="filterOffcanvas">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Filters</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" id="filterOffcanvasBody">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+
+        <!-- ===================== NEWSLETTER SECTION ===================== -->
+        <section class="newsletter-section" id="newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="newsletter-content text-center reveal-up">
+                            <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+                            <p class="newsletter-desc">Get the latest course updates, professional tips, and exclusive
+                                offers delivered straight to your inbox.</p>
+                            <form class="newsletter-form" id="newsletterForm">
+                                <div class="newsletter-input-wrap">
+                                    <input type="email" class="newsletter-input" id="newsletterEmail"
+                                        placeholder="Enter your email address" required>
+                                    <button type="submit" class="btn btn-accent">Subscribe</button>
+                                </div>
+                                <div class="newsletter-feedback" id="newsletterFeedback"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-about">
+                            <span class="brand-text footer-brand">SKILL CENTRE</span>
+                            <p class="footer-desc">Empowering professionals worldwide with industry-leading short
+                                courses designed for real-world career advancement and skill development.</p>
+                            <div class="footer-social">
+                                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <div class="footer-links">
+                            <h4 class="footer-heading">Quick Links</h4>
+                            <ul class="footer-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Categories</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="footer-links">
+                            <h4 class="footer-heading">Categories</h4>
+                            <ul class="footer-nav">
+                                <li><a href="#">Accounting &amp; Finance</a></li>
+                                <li><a href="#">Leadership</a></li>
+                                <li><a href="#">HR Management</a></li>
+                                <li><a href="#">Digital Marketing</a></li>
+                                <li><a href="#">Project Management</a></li>
+                                <li><a href="#">Data Science</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact">
+                            <h4 class="footer-heading">Contact Info</h4>
+                            <ul class="footer-contact-list">
+                                <li><i class="bi bi-geo-alt"></i><span>London, United Kingdom</span></li>
+                                <li><i class="bi bi-envelope"></i><a
+                                        href="mailto:info@skillcentre.uk">info@skillcentre.uk</a></li>
+                                <li><i class="bi bi-telephone"></i><a href="tel:+442012345678">+44 20 1234 5678</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="footer-copyright">&copy; 2025 Skill Centre. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-legal">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        /* ===========================
+   DOM READY
+========================== */
+        document.addEventListener('DOMContentLoaded', function () {
+
+            /* ===========================
+               HEADER SCROLL EFFECT
+            =========================== */
+            var header = document.getElementById('siteHeader');
+            var scrollThreshold = 60;
+
+            function handleHeaderScroll() {
+                if (window.scrollY > scrollThreshold) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }
+
+            window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+            handleHeaderScroll();
+
+            /* ===========================
+               MOBILE MENU - CLOSE ON LINK CLICK
+            =========================== */
+            var offcanvasEl = document.getElementById('mobileMenu');
+
+            if (offcanvasEl) {
+                var navLinks = offcanvasEl.querySelectorAll('.nav-link');
+                navLinks.forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        var instance = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                        if (instance) {
+                            instance.hide();
+                        }
+                    });
+                });
+            }
+
+            /* ===========================
+               SMOOTH SCROLL FOR ANCHOR LINKS
+            =========================== */
+            document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+                anchor.addEventListener('click', function (e) {
+                    var targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+
+                    var targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        e.preventDefault();
+                        targetEl.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            /* ===========================
+               SCROLL REVEAL ANIMATION
+            =========================== */
+            var revealElements = document.querySelectorAll('.reveal-up');
+
+            var revealObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        var parent = entry.target.closest('.course-grid');
+                        if (parent) {
+                            var siblings = parent.querySelectorAll('.reveal-up');
+                            var index = Array.from(siblings).indexOf(entry.target);
+                            entry.target.style.transitionDelay = (index * 0.08) + 's';
+                        }
+                        entry.target.classList.add('revealed');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.05,
+                rootMargin: '0px 0px -30px 0px'
+            });
+
+            revealElements.forEach(function (el) {
+                revealObserver.observe(el);
+            });
+
+            /* ===========================
+               MOBILE FILTER OFFCANVAS
+               Clone desktop sidebar into offcanvas
+            =========================== */
+            var filterSidebar = document.getElementById('filterSidebar');
+            var filterOffcanvasBody = document.getElementById('filterOffcanvasBody');
+            var filterToggleBtn = document.getElementById('filterToggleBtn');
+
+            if (filterSidebar && filterOffcanvasBody && filterToggleBtn) {
+                var sidebarInner = filterSidebar.querySelector('.filter-sidebar-inner');
+
+                if (sidebarInner) {
+                    var clone = sidebarInner.cloneNode(true);
+                    filterOffcanvasBody.appendChild(clone);
+
+                    // Re-initialize collapse for cloned elements
+                    var clonedToggles = clone.querySelectorAll('[data-bs-toggle="collapse"]');
+                    clonedToggles.forEach(function (toggle) {
+                        var targetSelector = toggle.getAttribute('data-bs-target');
+                        // Remove data-bs-attributes to prevent Bootstrap auto-init conflict
+                        toggle.removeAttribute('data-bs-toggle');
+                        toggle.removeAttribute('data-bs-target');
+                        toggle.removeAttribute('aria-expanded');
+
+                        var target = clone.querySelector(targetSelector);
+                        if (target) {
+                            // Start collapsed in offcanvas
+                            target.classList.remove('show');
+                            toggle.classList.add('collapsed');
+
+                            toggle.addEventListener('click', function () {
+                                var isExpanded = !target.classList.contains('show');
+                                if (isExpanded) {
+                                    target.classList.add('show');
+                                    toggle.classList.remove('collapsed');
+                                    toggle.setAttribute('aria-expanded', 'true');
+                                } else {
+                                    target.classList.remove('show');
+                                    toggle.classList.add('collapsed');
+                                    toggle.setAttribute('aria-expanded', 'false');
+                                }
+                            });
+                        }
+                    });
+                }
+            }
+
+            /* ===========================
+               FILTER CHECKBOX LOGIC
+               Category: only one at a time (radio behavior for checkboxes)
+            =========================== */
+            var categoryChecks = document.querySelectorAll('input[name="category"]');
+
+            categoryChecks.forEach(function (checkbox) {
+                checkbox.addEventListener('change', function () {
+                    if (this.checked) {
+                        categoryChecks.forEach(function (other) {
+                            if (other !== checkbox) {
+                                other.checked = false;
+                            }
+                        });
+                    }
+                });
+            });
+
+            /* ===========================
+               CLEAR ALL FILTERS
+            =========================== */
+            var clearBtns = document.querySelectorAll('.filter-clear');
+
+            clearBtns.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var parent = this.closest('.filter-sidebar-inner');
+                    if (parent) {
+                        var allInputs = parent.querySelectorAll('input[type="checkbox"], input[type="radio"]');
+                        allInputs.forEach(function (input) {
+                            if (input.value === 'all') {
+                                input.checked = true;
+                            } else {
+                                input.checked = false;
+                            }
+                        });
+                    }
+                });
+            });
+
+            /* ===========================
+               SORT SELECT
+            =========================== */
+            var sortSelect = document.getElementById('sortSelect');
+
+            if (sortSelect) {
+                sortSelect.addEventListener('change', function () {
+                    // Visual feedback only - sort value changed
+                    var selectedOption = this.options[this.selectedIndex];
+                    var value = selectedOption.value;
+                    // In production, this would trigger an API call or re-render
+                });
+            }
+
+            /* ===========================
+               NEWSLETTER FORM
+            =========================== */
+            var newsletterForm = document.getElementById('newsletterForm');
+            var newsletterEmail = document.getElementById('newsletterEmail');
+            var newsletterFeedback = document.getElementById('newsletterFeedback');
+
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    var email = newsletterEmail.value.trim();
+                    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                    if (!email) {
+                        showNewsletterFeedback('Please enter your email address.', 'error');
+                        return;
+                    }
+
+                    if (!emailRegex.test(email)) {
+                        showNewsletterFeedback('Please enter a valid email address.', 'error');
+                        return;
+                    }
+
+                    showNewsletterFeedback('Thank you for subscribing! Check your inbox for confirmation.', 'success');
+                    newsletterEmail.value = '';
+
+                    setTimeout(function () {
+                        newsletterFeedback.textContent = '';
+                        newsletterFeedback.className = 'newsletter-feedback';
+                    }, 5000);
+                });
+            }
+
+            function showNewsletterFeedback(message, type) {
+                newsletterFeedback.textContent = message;
+                newsletterFeedback.className = 'newsletter-feedback ' + type;
+            }
+
+            /* ===========================
+               BACK TO TOP BUTTON
+            =========================== */
+            var backToTop = document.getElementById('backToTop');
+
+            if (backToTop) {
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > 500) {
+                        backToTop.classList.add('visible');
+                    } else {
+                        backToTop.classList.remove('visible');
+                    }
+                }, { passive: true });
+
+                backToTop.addEventListener('click', function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>
