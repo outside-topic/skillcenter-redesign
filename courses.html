@@ -10,8 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-        <link rel="icon" type="image/png" href="https://skillcentre.uk/public/uploads/images/12-10-2024/67098f34d0d92.png">
-        <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/png" href="https://skillcentre.uk/public/uploads/images/12-10-2024/67098f34d0d92.png">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -655,6 +655,7 @@
     </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
     <script>
         /* ===========================
    DOM READY
@@ -902,6 +903,16 @@
                 });
             }
 
+        });
+
+        // Initialize Lenis
+        const lenis = new Lenis({
+            autoRaf: true,
+        });
+
+        // Listen for the scroll event and log the event data
+        lenis.on('scroll', (e) => {
+            console.log(e);
         });
     </script>
 </body>
