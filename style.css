@@ -253,7 +253,10 @@ img {
 }
 
 .site-header.scrolled .nav-link {
-    color: var(--primary);
+    color: var(--primary) !important;
+}
+.site-header.scrolled .nav-link:hover {
+    color: var(--accent) !important;
 }
 
 .site-header .navbar {
@@ -2045,10 +2048,6 @@ img {
 
 /* ========== Courses start ========== */
 
-
-/* ===================================
-   HERO SECTION
-=================================== */
 .hero-courses {
     position: relative;
     background-color: var(--primary);
