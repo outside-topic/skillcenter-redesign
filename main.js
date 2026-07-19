@@ -1,11 +1,11 @@
 // Initialize Lenis
 const lenis = new Lenis({
-  autoRaf: true,
+    autoRaf: true,
 });
 
 // Listen for the scroll event and log the event data
 lenis.on('scroll', (e) => {
-  console.log(e);
+    console.log(e);
 });
 
 
@@ -373,6 +373,390 @@ const swiper = new Swiper('.swiper', {
 
 
 
-// ============= Contact start ==========
+// ======= login start =====
+document.addEventListener('DOMContentLoaded', function () {
 
-// ============= Contact end ==========
+    /*==============================
+    DOM ELEMENTS
+    ==============================*/
+    var loginForm = document.getElementById('loginForm');
+    var emailInput = document.getElementById('email');
+    var passwordInput = document.getElementById('password');
+    var passwordToggle = document.getElementById('passwordToggle');
+    var loginBtn = document.getElementById('loginBtn');
+    var emailError = document.getElementById('emailError');
+    var passwordError = document.getElementById('passwordError');
+
+
+    /*==============================
+    PASSWORD VISIBILITY TOGGLE
+    ==============================*/
+    passwordToggle.addEventListener('click', function () {
+        var isPassword = passwordInput.getAttribute('type') === 'password';
+        passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
+
+        var icon = this.querySelector('i');
+        icon.classList.toggle('bi-eye', !isPassword);
+        icon.classList.toggle('bi-eye-slash', isPassword);
+    });
+
+
+    /*==============================
+    VALIDATION HELPERS
+    ==============================*/
+    function isValidEmail(email) {
+        var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return pattern.test(email);
+    }
+
+    function showError(group, errorEl, message) {
+        group.classList.add('has-error');
+        errorEl.textContent = message;
+    }
+
+    function clearError(group, errorEl) {
+        group.classList.remove('has-error');
+        errorEl.textContent = '';
+    }
+
+
+    /*==============================
+    CLEAR ERRORS ON INPUT
+    ==============================*/
+    emailInput.addEventListener('input', function () {
+        clearError(this.closest('.login-form-group'), emailError);
+    });
+
+    passwordInput.addEventListener('input', function () {
+        clearError(this.closest('.login-form-group'), passwordError);
+    });
+
+
+    /*==============================
+    FORM SUBMISSION
+    ==============================*/
+    loginForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var isValid = true;
+        var emailGroup = emailInput.closest('.login-form-group');
+        var passwordGroup = passwordInput.closest('.login-form-group');
+
+        /* Validate email */
+        var emailValue = emailInput.value.trim();
+        if (!emailValue) {
+            showError(emailGroup, emailError, 'Email address is required');
+            isValid = false;
+        } else if (!isValidEmail(emailValue)) {
+            showError(emailGroup, emailError, 'Please enter a valid email address');
+            isValid = false;
+        }
+
+        /* Validate password */
+        var passwordValue = passwordInput.value;
+        if (!passwordValue) {
+            showError(passwordGroup, passwordError, 'Password is required');
+            isValid = false;
+        } else if (passwordValue.length < 6) {
+            showError(passwordGroup, passwordError, 'Password must be at least 6 characters');
+            isValid = false;
+        }
+
+        if (!isValid) {
+            return;
+        }
+
+        /* Show loading state */
+        loginBtn.classList.add('is-loading');
+        loginBtn.disabled = true;
+
+        /* Simulate API request */
+        setTimeout(function () {
+            loginBtn.classList.remove('is-loading');
+            loginBtn.disabled = false;
+        }, 2000);
+    });
+
+
+    /*==============================
+    INPUT FOCUS EFFECTS
+    ==============================*/
+    var formGroups = document.querySelectorAll('.login-form-group');
+
+    formGroups.forEach(function (group) {
+        var input = group.querySelector('.form-control');
+
+        if (!input) {
+            return;
+        }
+
+        input.addEventListener('focus', function () {
+            group.classList.add('is-focused');
+        });
+
+        input.addEventListener('blur', function () {
+            group.classList.remove('is-focused');
+        });
+    });
+
+});
+// ======= login end =====
+
+
+
+// ========== Register start =========
+document.addEventListener('DOMContentLoaded', function () {
+
+    /*==============================
+    DOM ELEMENTS
+    ==============================*/
+    var registerForm = document.getElementById('registerForm');
+    var firstNameInput = document.getElementById('firstName');
+    var lastNameInput = document.getElementById('lastName');
+    var emailInput = document.getElementById('email');
+    var phoneInput = document.getElementById('phone');
+    var passwordInput = document.getElementById('password');
+    var confirmPasswordInput = document.getElementById('confirmPassword');
+    var termsCheck = document.getElementById('termsCheck');
+    var registerBtn = document.getElementById('registerBtn');
+    var passwordStrength = document.getElementById('passwordStrength');
+    var strengthText = document.getElementById('strengthText');
+
+    var firstNameError = document.getElementById('firstNameError');
+    var lastNameError = document.getElementById('lastNameError');
+    var emailError = document.getElementById('emailError');
+    var phoneError = document.getElementById('phoneError');
+    var passwordError = document.getElementById('passwordError');
+    var confirmPasswordError = document.getElementById('confirmPasswordError');
+    var termsError = document.getElementById('termsError');
+
+
+    /*==============================
+    PASSWORD TOGGLE
+    ==============================*/
+    var toggleButtons = document.querySelectorAll('.password-toggle');
+
+    toggleButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var targetId = this.getAttribute('data-target');
+            var input = document.getElementById(targetId);
+            var isPassword = input.getAttribute('type') === 'password';
+            input.setAttribute('type', isPassword ? 'text' : 'password');
+
+            var icon = this.querySelector('i');
+            icon.classList.toggle('bi-eye', !isPassword);
+            icon.classList.toggle('bi-eye-slash', isPassword);
+        });
+    });
+
+
+    /*==============================
+    PASSWORD STRENGTH CHECKER
+    ==============================*/
+    function checkPasswordStrength(password) {
+        var score = 0;
+
+        if (password.length >= 6) score++;
+        if (password.length >= 10) score++;
+        if (/[a-z]/.test(password) && /[A-Z]/.test(password)) score++;
+        if (/\d/.test(password)) score++;
+        if (/[^a-zA-Z0-9]/.test(password)) score++;
+
+        if (score <= 1) return 'weak';
+        if (score === 2) return 'fair';
+        if (score === 3) return 'good';
+        return 'strong';
+    }
+
+    var strengthLabels = {
+        weak: 'Weak',
+        fair: 'Fair',
+        good: 'Good',
+        strong: 'Strong'
+    };
+
+    function updateStrengthIndicator() {
+        var value = passwordInput.value;
+
+        if (value.length === 0) {
+            passwordStrength.classList.remove('is-visible', 'strength-weak', 'strength-fair', 'strength-good', 'strength-strong');
+            strengthText.textContent = '';
+            return;
+        }
+
+        var level = checkPasswordStrength(value);
+
+        passwordStrength.classList.add('is-visible');
+        passwordStrength.classList.remove('strength-weak', 'strength-fair', 'strength-good', 'strength-strong');
+        passwordStrength.classList.add('strength-' + level);
+        strengthText.textContent = strengthLabels[level];
+    }
+
+    passwordInput.addEventListener('input', updateStrengthIndicator);
+
+
+    /*==============================
+    VALIDATION HELPERS
+    ==============================*/
+    function isValidEmail(email) {
+        var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return pattern.test(email);
+    }
+
+    function isValidPhone(phone) {
+        var digits = phone.replace(/\D/g, '');
+        return digits.length >= 7 && digits.length <= 15;
+    }
+
+    function showError(group, errorEl, message) {
+        group.classList.add('has-error');
+        errorEl.textContent = message;
+    }
+
+    function clearError(group, errorEl) {
+        group.classList.remove('has-error');
+        errorEl.textContent = '';
+    }
+
+
+    /*==============================
+    REAL-TIME CLEAR ON INPUT
+    ==============================*/
+    var fieldMap = [
+        { input: firstNameInput, group: firstNameInput.closest('.reg-form-group'), error: firstNameError },
+        { input: lastNameInput, group: lastNameInput.closest('.reg-form-group'), error: lastNameError },
+        { input: emailInput, group: emailInput.closest('.reg-form-group'), error: emailError },
+        { input: phoneInput, group: phoneInput.closest('.reg-form-group'), error: phoneError },
+        { input: passwordInput, group: passwordInput.closest('.reg-form-group'), error: passwordError },
+        { input: confirmPasswordInput, group: confirmPasswordInput.closest('.reg-form-group'), error: confirmPasswordError }
+    ];
+
+    fieldMap.forEach(function (field) {
+        field.input.addEventListener('input', function () {
+            clearError(field.group, field.error);
+        });
+    });
+
+    termsCheck.addEventListener('change', function () {
+        clearError(termsCheck.closest('.form-terms'), termsError);
+    });
+
+
+    /*==============================
+    REAL-TIME PASSWORD MATCH
+    ==============================*/
+    confirmPasswordInput.addEventListener('input', function () {
+        var group = this.closest('.reg-form-group');
+        if (this.value.length > 0 && this.value !== passwordInput.value) {
+            showError(group, confirmPasswordError, 'Passwords do not match');
+        } else {
+            clearError(group, confirmPasswordError);
+        }
+    });
+
+
+    /*==============================
+    FORM SUBMISSION
+    ==============================*/
+    registerForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var isValid = true;
+
+        /* First Name */
+        if (!firstNameInput.value.trim()) {
+            showError(firstNameInput.closest('.reg-form-group'), firstNameError, 'First name is required');
+            isValid = false;
+        }
+
+        /* Last Name */
+        if (!lastNameInput.value.trim()) {
+            showError(lastNameInput.closest('.reg-form-group'), lastNameError, 'Last name is required');
+            isValid = false;
+        }
+
+        /* Email */
+        var emailValue = emailInput.value.trim();
+        if (!emailValue) {
+            showError(emailInput.closest('.reg-form-group'), emailError, 'Email address is required');
+            isValid = false;
+        } else if (!isValidEmail(emailValue)) {
+            showError(emailInput.closest('.reg-form-group'), emailError, 'Please enter a valid email address');
+            isValid = false;
+        }
+
+        /* Phone */
+        var phoneValue = phoneInput.value.trim();
+        if (!phoneValue) {
+            showError(phoneInput.closest('.reg-form-group'), phoneError, 'Phone number is required');
+            isValid = false;
+        } else if (!isValidPhone(phoneValue)) {
+            showError(phoneInput.closest('.reg-form-group'), phoneError, 'Please enter a valid phone number');
+            isValid = false;
+        }
+
+        /* Password */
+        var passwordValue = passwordInput.value;
+        if (!passwordValue) {
+            showError(passwordInput.closest('.reg-form-group'), passwordError, 'Password is required');
+            isValid = false;
+        } else if (passwordValue.length < 6) {
+            showError(passwordInput.closest('.reg-form-group'), passwordError, 'Password must be at least 6 characters');
+            isValid = false;
+        }
+
+        /* Confirm Password */
+        var confirmValue = confirmPasswordInput.value;
+        if (!confirmValue) {
+            showError(confirmPasswordInput.closest('.reg-form-group'), confirmPasswordError, 'Please confirm your password');
+            isValid = false;
+        } else if (confirmValue !== passwordValue) {
+            showError(confirmPasswordInput.closest('.reg-form-group'), confirmPasswordError, 'Passwords do not match');
+            isValid = false;
+        }
+
+        /* Terms */
+        if (!termsCheck.checked) {
+            showError(termsCheck.closest('.form-terms'), termsError, 'You must agree to the Terms of Service');
+            isValid = false;
+        }
+
+        if (!isValid) {
+            return;
+        }
+
+        /* Show loading state */
+        registerBtn.classList.add('is-loading');
+        registerBtn.disabled = true;
+
+        /* Simulate API request */
+        setTimeout(function () {
+            registerBtn.classList.remove('is-loading');
+            registerBtn.disabled = false;
+        }, 2000);
+    });
+
+
+    /*==============================
+    INPUT FOCUS EFFECTS
+    ==============================*/
+    var formGroups = document.querySelectorAll('.reg-form-group');
+
+    formGroups.forEach(function (group) {
+        var input = group.querySelector('.form-control');
+
+        if (!input) {
+            return;
+        }
+
+        input.addEventListener('focus', function () {
+            group.classList.add('is-focused');
+        });
+
+        input.addEventListener('blur', function () {
+            group.classList.remove('is-focused');
+        });
+    });
+
+});
+// ========== Register end =========

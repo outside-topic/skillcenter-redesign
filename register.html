@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your Z AI account — The Future of Intelligence">
+    <meta name="theme-color" content="#001439">
+    <title>Create Account</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="register-section">
+        <div class="container-fluid p-0">
+            <div class="row g-0  d-flex justify-content-center">
+                <div class="deco-shape deco-shape-1"></div>
+                <div class="deco-shape deco-shape-2"></div>
+                <div class="deco-shape deco-shape-3"></div>
+                <div class="deco-shape deco-shape-4"></div>
+                <div class="deco-shape deco-shape-5"></div>
+                <!-- Right Panel -->
+                <div class="col-lg-7 register-right-panel">
+                    <div class="register-right-inner">
+                        <!-- Registration Card -->
+                        <div class="register-card">
+                            <div class="register-card-header">
+                                <h2>Create Account</h2>
+                            </div>
+                            <form id="registerForm" novalidate>
+                                <!-- Name Row -->
+                                <div class="row g-3 mb-3" data-animate="1">
+                                    <div class="col-sm-6">
+                                        <div class="reg-form-group">
+                                            <label for="firstName">First Name</label>
+                                            <div class="input-wrapper">
+                                                <i class="bi bi-person input-icon"></i>
+                                                <input type="text" id="firstName" class="form-control"
+                                                    placeholder="John" autocomplete="given-name" required>
+                                            </div>
+                                            <div class="field-error" id="firstNameError"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="reg-form-group">
+                                            <label for="lastName">Last Name</label>
+                                            <div class="input-wrapper">
+                                                <i class="bi bi-person input-icon"></i>
+                                                <input type="text" id="lastName" class="form-control" placeholder="Doe"
+                                                    autocomplete="family-name" required>
+                                            </div>
+                                            <div class="field-error" id="lastNameError"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="reg-form-group mb-3" data-animate="2">
+                                    <label for="email">Email Address</label>
+                                    <div class="input-wrapper">
+                                        <i class="bi bi-envelope input-icon"></i>
+                                        <input type="email" id="email" class="form-control"
+                                            placeholder="you@company.com" autocomplete="email" required>
+                                    </div>
+                                    <div class="field-error" id="emailError"></div>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="reg-form-group mb-3" data-animate="3">
+                                    <label for="phone">Phone Number</label>
+                                    <div class="input-wrapper">
+                                        <i class="bi bi-telephone input-icon"></i>
+                                        <input type="tel" id="phone" class="form-control"
+                                            placeholder="+1 (555) 000-0000" autocomplete="tel" inputmode="tel" required>
+                                    </div>
+                                    <div class="field-error" id="phoneError"></div>
+                                </div>
+
+                                <!-- Password Row -->
+                                <div class="row g-3 mb-0" data-animate="4">
+                                    <div class="col-sm-6">
+                                        <div class="reg-form-group">
+                                            <label for="password">Password</label>
+                                            <div class="input-wrapper">
+                                                <i class="bi bi-lock input-icon"></i>
+                                                <input type="password" id="password" class="form-control"
+                                                    placeholder="Min. 6 characters" autocomplete="new-password"
+                                                    required>
+                                                <button type="button" class="password-toggle" data-target="password"
+                                                    aria-label="Toggle password visibility">
+                                                    <i class="bi bi-eye"></i>
+                                                </button>
+                                            </div>
+                                            <div class="field-error" id="passwordError"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="reg-form-group">
+                                            <label for="confirmPassword">Confirm Password</label>
+                                            <div class="input-wrapper">
+                                                <i class="bi bi-shield-check input-icon"></i>
+                                                <input type="password" id="confirmPassword" class="form-control"
+                                                    placeholder="Re-enter password" autocomplete="new-password"
+                                                    required>
+                                                <button type="button" class="password-toggle"
+                                                    data-target="confirmPassword"
+                                                    aria-label="Toggle confirm password visibility">
+                                                    <i class="bi bi-eye"></i>
+                                                </button>
+                                            </div>
+                                            <div class="field-error" id="confirmPasswordError"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Password Strength -->
+                                <div class="password-strength" id="passwordStrength">
+                                    <div class="strength-inner">
+                                        <div class="strength-bars">
+                                            <span class="strength-bar"></span>
+                                            <span class="strength-bar"></span>
+                                            <span class="strength-bar"></span>
+                                            <span class="strength-bar"></span>
+                                        </div>
+                                        <span class="strength-text" id="strengthText"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Terms -->
+                                <div class="form-terms mb-4 mt-4" data-animate="5">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="termsCheck">
+                                        <label class="form-check-label" for="termsCheck">I agree to the <a
+                                                href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                                    </div>
+                                    <div class="field-error" id="termsError"></div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div data-animate="6">
+                                    <button type="submit" class="btn-register" id="registerBtn">
+                                        <span class="btn-text">Create Account</span>
+                                        <span class="btn-loader">
+                                            <span class="spinner-border spinner-border-sm" role="status"
+                                                aria-hidden="true"></span>
+                                        </span>
+                                    </button>
+                                </div>
+
+                            </form>
+
+                           
+
+                            <!-- Login Link -->
+                            <p class="login-link" data-animate="9">
+                                Already have an account? <a href="login.html">Sign in</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        
+    </script>
+
+</body>
+
+</html>

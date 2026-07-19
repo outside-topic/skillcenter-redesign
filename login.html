@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to Z AI — The Future of Intelligence">
+    <meta name="theme-color" content="#001439">
+    <title>Sign In</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="login-section">
+        <div class="container-fluid p-0">
+            <div class="row g-0 min-vh-100 d-flex justify-content-center">
+                
+                        <div class="deco-shape deco-shape-1"></div>
+                        <div class="deco-shape deco-shape-2"></div>
+                        <div class="deco-shape deco-shape-3"></div>
+                        <div class="deco-shape deco-shape-4"></div>
+                        <div class="deco-shape deco-shape-5"></div>
+                <!-- Right Panel -->
+                <div class="col-12 col-sm-12 col-md-7 col-lg-7 login-right-panel">
+                    <div class="login-right-inner">
+
+                        <!-- Mobile Logo -->
+                        <div class="mobile-logo d-lg-none">
+                            <span class="logo-z">Z</span>
+                            <span class="logo-ai">AI</span>
+                        </div>
+
+                        <!-- Login Card -->
+                        <div class="login-card">
+                            <div class="login-card-header">
+                                <h2>Welcome Back</h2>
+                                <p>Sign in to continue to your dashboard</p>
+                            </div>
+
+                            <form id="loginForm" novalidate>
+
+                                <!-- Email Field -->
+                                <div class="login-form-group" data-animate="1">
+                                    <label for="email">Email Address</label>
+                                    <div class="input-wrapper">
+                                        <i class="bi bi-envelope input-icon"></i>
+                                        <input type="email" id="email" class="form-control"
+                                            placeholder="you@company.com" autocomplete="email" required>
+                                    </div>
+                                    <div class="field-error" id="emailError"></div>
+                                </div>
+
+                                <!-- Password Field -->
+                                <div class="login-form-group" data-animate="2">
+                                    <label for="password">Password</label>
+                                    <div class="input-wrapper">
+                                        <i class="bi bi-lock input-icon"></i>
+                                        <input type="password" id="password" class="form-control"
+                                            placeholder="Enter your password" autocomplete="current-password" required>
+                                        <button type="button" class="password-toggle" id="passwordToggle"
+                                            aria-label="Toggle password visibility">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                    <div class="field-error" id="passwordError"></div>
+                                </div>
+
+                                <!-- Remember Me & Forgot Password -->
+                                <div class="form-options" data-animate="3">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                                    </div>
+                                    <a href="#" class="forgot-link">Forgot password?</a>
+                                </div>
+
+                                <!-- Login Button -->
+                                <div data-animate="4">
+                                    <button type="submit" class="btn-login" id="loginBtn">
+                                        <span class="btn-text">Sign In</span>
+                                        <span class="btn-loader">
+                                            <span class="spinner-border spinner-border-sm" role="status"
+                                                aria-hidden="true"></span>
+                                        </span>
+                                    </button>
+                                </div>
+
+                            </form>
+
+                            <!-- Create Account -->
+                            <p class="create-account" data-animate="7">
+                                Don't have an account? <a href="register.html">Create one</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>

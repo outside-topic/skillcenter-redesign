@@ -18,6 +18,44 @@
     .course-grid {
         gap: 20px;
     }
+    .login-card {
+        padding: 52px 44px;
+    }
+
+    .login-card-header h2 {
+        font-size: 32px;
+    }
+    .register-right-inner {
+        max-width: 540px;
+    }
+
+    .register-card {
+        padding: 48px 44px 44px;
+    }
+
+    .register-card-header h2 {
+        font-size: 32px;
+    }
+
+    .register-card::before {
+        left: 44px;
+        right: 44px;
+    }
+
+    .form-control {
+        padding: 13px 16px 13px 48px;
+        font-size: 15px;
+    }
+
+    .input-icon {
+        left: 16px;
+        font-size: 16px;
+    }
+
+    .reg-form-group label {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
 }
 
 /* ===========================
@@ -131,10 +169,6 @@
         padding: 44px 32px;
     }
 
-    :root {
-        --section-padding: 80px 0;
-    }
-
     .hero-courses {
         padding: 160px 0 80px;
     }
@@ -158,6 +192,17 @@
 
     .sort-select {
         min-width: 150px;
+    }
+    .login-right-panel {
+        padding: 48px 40px;
+    }
+    .register-right-panel {
+        padding: 40px 32px;
+    }
+
+    .register-card::before {
+        left: 40px;
+        right: 40px;
     }
 }
 
@@ -367,6 +412,30 @@
         justify-content: center;
         margin-top: 12px;
     }
+    .login-right-panel {
+        padding: 48px 40px;
+    }
+
+    .login-card {
+        padding: 44px 40px;
+    }
+    .register-right-panel {
+        padding: 40px 36px;
+    }
+
+    .register-card {
+        padding: 40px 36px 36px;
+    }
+
+    .register-card::before {
+        left: 36px;
+        right: 36px;
+    }
+
+    .form-control {
+        padding: 13px 14px 13px 46px;
+        font-size: 15px;
+    }
 }
 
 /* ===========================
@@ -516,6 +585,25 @@
     .course-pagination .pagination {
         gap: 4px;
     }
+    .login-right-panel {
+        padding: 40px 32px;
+    }
+
+    .login-card {
+        padding: 40px 36px;
+    }
+    .register-right-panel {
+        padding: 36px 28px;
+    }
+
+    .register-card {
+        padding: 36px 32px 32px;
+    }
+
+    .register-card::before {
+        left: 32px;
+        right: 32px;
+    }
 }
 
 /* ===========================
@@ -608,6 +696,33 @@
     .course-card-body {
         padding: 16px;
     }
+    .login-right-panel {
+        padding: 32px 24px;
+    }
+
+    .login-card {
+        padding: 36px 28px;
+    }
+
+    .login-card-header h2 {
+        font-size: 26px;
+    }
+    .register-right-panel {
+        padding: 28px 20px;
+    }
+
+    .register-card {
+        padding: 32px 28px 28px;
+    }
+
+    .register-card::before {
+        left: 28px;
+        right: 28px;
+    }
+
+    .register-card-header h2 {
+        font-size: 26px;
+    }
 }
 
 /* ===========================
@@ -695,6 +810,35 @@
         height: 36px;
         font-size: 14px;
     }
+    .login-right-panel {
+        padding: 24px 16px;
+    }
+
+    .login-card {
+        padding: 28px 20px;
+        border-radius: var(--radius-lg);
+    }
+
+    .login-card-header h2 {
+        font-size: 24px;
+    }
+    .register-right-panel {
+        padding: 20px 14px;
+    }
+
+    .register-card {
+        padding: 28px 20px 24px;
+        border-radius: var(--radius-lg);
+    }
+
+    .register-card::before {
+        left: 20px;
+        right: 20px;
+    }
+
+    .register-card-header h2 {
+        font-size: 24px;
+    }
 }
 
 /* ===================================
@@ -738,12 +882,6 @@
         font-size: 12px;
         padding: 6px 10px;
     }
-}
-
-/* ===========================
-   RESPONSIVE - 320px
-=========================== */
-@media (max-width: 319.98px) {
     .hero-title {
         font-size: 20px;
     }
@@ -797,4 +935,143 @@
         left: 14px;
         font-size: 12px;
     }
+    .login-right-panel {
+        padding: 20px 12px;
+    }
+
+    .login-card {
+        padding: 24px 16px;
+        border-radius: var(--radius-lg);
+    }
+
+    .login-card-header h2 {
+        font-size: 22px;
+    }
+
+    .login-card-header p {
+        font-size: 13px;
+    }
+
+    .form-control {
+        padding: 12px 14px 12px 44px;
+        font-size: 14px;
+    }
+
+    .input-icon {
+        left: 14px;
+        font-size: 14px;
+    }
+
+    .btn-login {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .login-form-group {
+        margin-bottom: 16px;
+    }
+
+    .form-options {
+        margin-bottom: 20px;
+    }
+    .create-account {
+        font-size: 13px;
+        margin-top: 24px;
+    }
+
+    .mobile-logo {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    .login-form-group label {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .form-check-label,
+    .forgot-link {
+        font-size: 13px;
+    }
+     .register-right-panel {
+        padding: 16px 8px;
+    }
+
+    .register-card {
+        padding: 24px 16px 20px;
+        border-radius: var(--radius-lg);
+    }
+
+    .register-card::before {
+        left: 16px;
+        right: 16px;
+    }
+
+    .register-card-header h2 {
+        font-size: 22px;
+    }
+
+    .register-card-header p {
+        font-size: 13px;
+    }
+
+    .register-card-header {
+        margin-bottom: 20px;
+    }
+
+    .reg-form-group label {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .form-control {
+        padding: 10px 12px 10px 38px;
+        font-size: 13px;
+    }
+
+    .input-icon {
+        left: 12px;
+        font-size: 13px;
+    }
+
+    .password-toggle {
+        width: 30px;
+        height: 30px;
+        right: 4px;
+        font-size: 13px;
+    }
+
+    .input-wrapper:has(.password-toggle) .form-control {
+        padding-right: 38px;
+    }
+
+
+    .field-error {
+        font-size: 11px;
+        margin-top: 3px;
+    }
+
+    .strength-bar {
+        width: 28px;
+        height: 3px;
+    }
+
+    .strength-text {
+        font-size: 11px;
+    }
+
+    .form-terms .form-check-label {
+        font-size: 12px;
+    }
+
+    .login-link {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .mobile-logo {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
 }
