@@ -6,11 +6,17 @@
         width: 500px;
         height: 360px;
     }
+
     .form-side-panel {
         padding: 52px 40px;
     }
+
     .form-main-panel {
         padding: 52px 40px;
+    }
+
+    .course-grid {
+        gap: 20px;
     }
 }
 
@@ -21,18 +27,38 @@
     .hero-visual {
         height: 420px;
     }
+
     .hero-image-wrapper {
         width: 260px;
         height: 340px;
     }
+
     .cta-card {
         padding: 48px;
     }
+
     .form-side-panel {
         padding: 44px 32px;
     }
+
     .form-main-panel {
         padding: 44px 32px;
+    }
+
+    .course-grid {
+        gap: 20px;
+    }
+
+    .course-card-title {
+        font-size: 15px;
+    }
+
+    .course-card-body {
+        padding: 18px;
+    }
+
+    .course-card-price {
+        font-size: 18px;
     }
 }
 
@@ -43,30 +69,37 @@
     :root {
         --section-padding: 80px 0;
     }
+
     .hero-section {
         padding: 140px 0 140px;
         min-height: auto;
     }
+
     .hero-title {
         font-size: clamp(28px, 5vw, 44px);
     }
+
     .hero-btns {
         flex-direction: column;
     }
+
     .hero-btns .btn {
         width: fit-content;
     }
+
     .testimonial-card {
         padding: 36px 28px;
     }
+
     .cta-card {
         padding: 40px 32px;
         text-align: center;
     }
+
     .cta-section .col-lg-5 {
         text-align: center !important;
     }
-    
+
     .hero-contact {
         padding: 160px 0 80px;
     }
@@ -97,6 +130,35 @@
     .form-main-panel {
         padding: 44px 32px;
     }
+
+    :root {
+        --section-padding: 80px 0;
+    }
+
+    .hero-courses {
+        padding: 160px 0 80px;
+    }
+
+    .courses-content-section {
+        padding: 36px 0 var(--section-padding);
+    }
+
+    .filter-sidebar {
+        display: none;
+    }
+
+    .filter-toggle-btn {
+        display: inline-flex;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .sort-select {
+        min-width: 150px;
+    }
 }
 
 /* ===========================
@@ -106,55 +168,70 @@
     :root {
         --section-padding: 64px 0;
     }
+
     .hero-section {
         padding: 120px 0 130px;
     }
+
     .hero-desc {
         font-size: 15px;
     }
+
     .stat-item:not(:last-child)::after {
         display: none;
     }
+
     .stat-item {
         margin-bottom: 16px;
     }
+
     .stat-item:last-child {
         margin-bottom: 0;
     }
+
     .hero-stats-bar {
         padding: 24px 0;
     }
+
     .section-title {
         font-size: clamp(24px, 5vw, 32px);
     }
+
     .testimonial-card {
         padding: 32px 20px;
     }
+
     .testimonial-text {
         font-size: 15px;
     }
+
     .newsletter-input-wrap {
         flex-direction: column;
         border-radius: var(--radius-md);
         padding: 8px;
         gap: 8px;
     }
+
     .newsletter-input {
         padding: 12px 16px;
         text-align: center;
     }
+
     .newsletter-form .btn-accent {
         width: 100%;
         justify-content: center;
         border-radius: var(--radius-full);
     }
+
     .footer-legal {
         justify-content: center;
         margin-top: 12px;
     }
+
     .cta-card {
         padding: 32px 20px;
     }
+
     .hero-contact {
         padding: 140px 0 70px;
     }
@@ -167,13 +244,7 @@
         height: 40px;
     }
 
-    .contact-info-section {
-        padding: 60px 0 30px;
-    }
 
-    .info-card {
-        padding: 28px 20px;
-    }
 
     .form-side-panel {
         padding: 36px 24px;
@@ -214,6 +285,88 @@
         justify-content: center;
         margin-top: 12px;
     }
+
+
+    .hero-courses {
+        padding: 140px 0 70px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+    }
+
+    .hero-bottom-edge {
+        height: 40px;
+    }
+
+    .courses-content-section {
+        padding: 28px 0 var(--section-padding);
+    }
+
+    .course-toolbar {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+        padding: 14px 16px;
+    }
+
+    .toolbar-left {
+        justify-content: space-between;
+    }
+
+    .toolbar-right {
+        justify-content: flex-end;
+    }
+
+    .sort-select {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .course-card-meta {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .course-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .btn-card-action {
+        width: 100%;
+        justify-content: center;
+        padding: 9px 16px;
+    }
+
+    .newsletter-input-wrap {
+        flex-direction: column;
+        border-radius: var(--radius-md);
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .newsletter-input {
+        padding: 12px 16px;
+        text-align: center;
+    }
+
+    .newsletter-form .btn-accent {
+        width: 100%;
+        justify-content: center;
+        border-radius: var(--radius-full);
+    }
+
+    .footer-legal {
+        justify-content: center;
+        margin-top: 12px;
+    }
 }
 
 /* ===========================
@@ -223,45 +376,59 @@
     .hero-section {
         padding: 110px 0 120px;
     }
+
     .hero-title {
         font-size: 26px;
     }
+
     .hero-desc {
         font-size: 14px;
         margin-bottom: 28px;
     }
-    .btn-accent, .btn-outline-white {
+
+    .btn-accent,
+    .btn-outline-white {
         padding: 11px 24px;
         font-size: 13px;
     }
-    .btn-accent.btn-lg, .btn-outline-white.btn-lg {
+
+    .btn-accent.btn-lg,
+    .btn-outline-white.btn-lg {
         padding: 12px 28px;
         font-size: 14px;
     }
+
     .stat-number {
         font-size: 28px;
     }
+
     .stat-label {
         font-size: 11px;
     }
+
     .course-body {
         padding: 18px;
     }
+
     .course-footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
     }
+
     .btn-add-cart {
         width: 100%;
         justify-content: center;
     }
+
     .category-card {
         padding: 28px 20px;
     }
+
     .blog-body {
         padding: 18px;
     }
+
     .hero-contact {
         padding: 130px 0 60px;
     }
@@ -278,26 +445,10 @@
         font-size: 11px;
     }
 
-    .btn-accent, .btn-submit {
+    .btn-accent,
+    .btn-submit {
         padding: 14px 28px;
         font-size: 14px;
-    }
-
-    .info-icon {
-        width: 56px;
-        height: 56px;
-    }
-
-    .info-icon i {
-        font-size: 22px;
-    }
-
-    .info-label {
-        font-size: 15px;
-    }
-
-    .info-text {
-        font-size: 13px;
     }
 
     .contact-form .form-control {
@@ -311,15 +462,59 @@
         font-size: 13px;
     }
 
-    .contact-form .form-control:focus ~ label,
-    .contact-form .form-control:not(:placeholder-shown) ~ label {
+    .contact-form .form-control:focus~label,
+    .contact-form .form-control:not(:placeholder-shown)~label {
         font-size: 10px;
         top: 8px;
     }
 
-    .contact-form textarea.form-control:focus ~ label,
-    .contact-form textarea.form-control:not(:placeholder-shown) ~ label {
+    .contact-form textarea.form-control:focus~label,
+    .contact-form textarea.form-control:not(:placeholder-shown)~label {
         top: 6px;
+    }
+
+    .hero-courses {
+        padding: 130px 0 60px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-desc {
+        font-size: 15px;
+    }
+
+    .breadcrumb-nav .breadcrumb-item {
+        font-size: 11px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .course-card-image {
+        aspect-ratio: 16 / 9;
+    }
+
+    .course-card-title {
+        font-size: 17px;
+    }
+
+    .course-card-price {
+        font-size: 20px;
+    }
+
+    .course-pagination .page-item .page-link {
+        padding: 8px 14px;
+        min-width: 40px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .course-pagination .pagination {
+        gap: 4px;
     }
 }
 
@@ -330,22 +525,28 @@
     .hero-section {
         padding: 100px 0 110px;
     }
+
     .hero-title {
         font-size: 24px;
     }
+
     .section-header {
         margin-bottom: 36px;
     }
+
     .course-title {
         font-size: 15px;
     }
+
     .category-name {
         font-size: 16px;
     }
+
     .blog-title {
         font-size: 15px;
     }
-     .hero-contact {
+
+    .hero-contact {
         padding: 120px 0 55px;
     }
 
@@ -374,6 +575,39 @@
         width: 100%;
         justify-content: center;
     }
+
+    .hero-courses {
+        padding: 120px 0 55px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .course-toolbar {
+        padding: 12px 14px;
+    }
+
+    .filter-toggle-btn {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    .course-count {
+        font-size: 13px;
+    }
+
+    .sort-label {
+        display: none;
+    }
+
+    .sort-select {
+        width: 100%;
+    }
+
+    .course-card-body {
+        padding: 16px;
+    }
 }
 
 /* ===========================
@@ -383,24 +617,30 @@
     .hero-title {
         font-size: 22px;
     }
+
     .hero-desc {
         font-size: 13px;
     }
+
     .brand-text {
         font-size: 18px;
         letter-spacing: 1px;
     }
+
     .course-price {
         font-size: 20px;
     }
+
     .category-icon {
         width: 60px;
         height: 60px;
     }
+
     .category-icon i {
         font-size: 24px;
     }
-     .brand-text {
+
+    .brand-text {
         font-size: 18px;
         letter-spacing: 1px;
     }
@@ -413,18 +653,7 @@
         font-size: 14px;
     }
 
-    .info-card {
-        padding: 24px 16px;
-    }
 
-    .info-icon {
-        width: 50px;
-        height: 50px;
-    }
-
-    .info-icon i {
-        font-size: 20px;
-    }
 
     .feature-check {
         width: 28px;
@@ -438,32 +667,41 @@
     .form-side-feature span {
         font-size: 13px;
     }
-}
 
-/* ===========================
-   RESPONSIVE - 320px
-=========================== */
-@media (max-width: 319.98px) {
+    .brand-text {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
     .hero-title {
-        font-size: 20px;
+        font-size: 26px;
     }
-    .hero-btns .btn {
-        width: 100%;
-        justify-content: center;
+
+    .hero-desc {
+        font-size: 14px;
     }
-    .stat-number {
-        font-size: 24px;
+
+    .course-card-badge {
+        font-size: 9px;
+        padding: 3px 10px;
     }
-    .course-meta {
-        flex-direction: column;
-        gap: 6px;
+
+    .course-card-title {
+        font-size: 16px;
     }
+
     .footer-social a {
         width: 36px;
         height: 36px;
         font-size: 14px;
     }
-    .hero-contact {
+}
+
+/* ===================================
+   RESPONSIVE - 320PX
+=================================== */
+@media (max-width: 319.98px) {
+    .hero-courses {
         padding: 110px 0 50px;
     }
 
@@ -475,16 +713,71 @@
         font-size: 13px;
     }
 
-    .info-card {
-        padding: 20px 14px;
+    .course-card-footer {
+        flex-direction: row;
+        align-items: center;
     }
 
-    .info-label {
+    .btn-card-action {
+        width: auto;
+        padding: 7px 12px;
+        font-size: 10px;
+    }
+
+    .btn-card-action span {
+        display: none;
+    }
+
+    .course-card-price {
+        font-size: 18px;
+    }
+
+    .course-pagination .page-item .page-link {
+        min-width: 36px;
+        height: 36px;
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+/* ===========================
+   RESPONSIVE - 320px
+=========================== */
+@media (max-width: 319.98px) {
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .stat-number {
+        font-size: 24px;
+    }
+
+    .course-meta {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .footer-social a {
+        width: 36px;
+        height: 36px;
         font-size: 14px;
     }
 
-    .info-text {
-        font-size: 12px;
+    .hero-contact {
+        padding: 110px 0 50px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .hero-desc {
+        font-size: 13px;
     }
 
     .form-side-panel {
