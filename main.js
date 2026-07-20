@@ -760,3 +760,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 // ========== Register end =========
+
+
+
+// =========course details start ===========
+
+// =========course details end ===========
